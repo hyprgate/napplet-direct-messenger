@@ -9,7 +9,7 @@ export default defineConfig({
     svelte(),
     nip5aManifest({
       nappletType: 'direct-messenger',
-      requires: ['dm', 'common', 'intent'],
+      requires: ['dm', 'common', 'intent', 'resource'],
       optional: ['theme'],
       archetypes: [{ slug: 'dm', convention: 'napplet:dm/open' }],
       icon: { data: readFileSync(new URL('./icon.png', import.meta.url)), mimeType: 'image/png' },
